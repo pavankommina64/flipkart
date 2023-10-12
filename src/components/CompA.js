@@ -1,27 +1,42 @@
 import React from 'react'
-export default function CompA(props) {
+
+ function CompA(props) {
   return (
     <>
-    <table border={2}>
+    <table border={1}>
         <tr>
             <th>name</th>
-            <th>rollno</th>
+            <th>roll</th>
         </tr>
-   {
-       props.data.map((e,i)=>   
-       {
-           return(
-           <>
-           <tr>
-              <td>{e.name}</td>
-              <td>{e.rollno}</td>
-              </tr>
-           </>
-           )
-       }
-       )
-   }  
+    {
+        
+        props.data.map((e,i)=>{
+            return(
+
+                <>
+                 <tr>
+                    <td>{e.name}</td>
+                    <td>{e.roll}</td>
+                 </tr>
+              
+               
+                   
+                
+
+                </>
+            )
+
+        })
+
+        
+    }
     </table>
-    </>
+   
+    <div>
+        <h1>CompA</h1>
+        <h1>{typeof props.data}</h1>
+        </div>
+        </>
   )
 }
+export default CompA;

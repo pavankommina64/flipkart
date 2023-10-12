@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Axios from 'axios'
-export default function Products() {
+import axios from 'axios'
+function Products() {
 
     const [products, setProducts] = useState([{}])
     const [images, setImages] = useState(Array)
@@ -45,3 +45,4 @@ export default function Products() {
         </>
   )
 }
+export default Products;
