@@ -7,6 +7,10 @@ import Products from './components/Products';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Mobiles from './components/Mobiles';
 import Laptops from './components/Laptops';
+import Medicin from './components/Medicin';
+import Perfums from './components/Perfums';
+import Home from './components/Home';
+
 function App() {
   // Hello worldd
   
@@ -21,6 +25,9 @@ function App() {
   <Routes>
     <Route path='/Mobiles' element={<Mobiles/>}></Route>
     <Route path='/Laptops' element={<Laptops/>}></Route>
+    <Route path='/Medicin' element={<Medicin/>}></Route>
+    <Route path='/Perfums' element={<Perfums/>}></Route>
+    <Route path='/Home' element={<Home/>}></Route>
   </Routes>
   </div>
   </BrowserRouter>
